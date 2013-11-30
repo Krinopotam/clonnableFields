@@ -272,7 +272,7 @@
                     );
                 }
 
-                if (fileId.val()>0)
+                if (fileId.val()!=='')
                 {
                     deleteCallback(fileId.val());
                 }
