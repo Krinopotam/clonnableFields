@@ -118,7 +118,7 @@ function removeRowAction (removeLink, maxCloneRows, minCloneRows, beforeAddRowCu
 
     jQuery('a.clone-row', widget).css('display','');
 
-    if (currentClonedNum<=minCloneRows)
+    if (minCloneRows>0 && currentClonedNum<=minCloneRows)
     {
         jQuery('a.remove-cloned-row', widget).css('display','none');
     }
