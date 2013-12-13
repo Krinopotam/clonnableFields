@@ -81,7 +81,14 @@
 
         public function init()
         {
-            Yii::import('ext.clonnableFields.components.*');
+            // take the current extension path
+            $dir = dirname(__FILE__);
+            // generate alias name
+            $alias = md5($dir);
+            // create alias
+            Yii::setPathOfAlias($alias,$dir);
+            // import other classes
+            Yii::import($alias.'.*');
 
             if (isset($this->widgetId))
             {
