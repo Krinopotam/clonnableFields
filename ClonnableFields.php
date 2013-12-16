@@ -88,7 +88,7 @@
             // create alias
             Yii::setPathOfAlias($alias,$dir);
             // import other classes
-            Yii::import($alias.'.*');
+            Yii::import($alias.'.components.*');
 
             if (isset($this->widgetId))
             {
