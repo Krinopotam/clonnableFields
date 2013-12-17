@@ -230,7 +230,7 @@
                         {
                             if ($this->errorDecoration=='')
                             {
-                                $errors.=Chtml::error($model, $attribute);
+                                $errors.=CHtml::error($model, $attribute);
                             }
                             else
                             {
