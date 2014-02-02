@@ -372,8 +372,9 @@ jQuery(document).ready
         var showLastDivider='".$this->showLastDivider."';
         var target=jQuery('fakevalue');
         var dinamicLabels=".($this->labelsMode==self::LABELS_DINAMIC? 'true' : 'false').";
+        var sortable=".($this->sortable ? 'true' : 'false').";
         ".$this->createFieldsJavaActions()."
-        initClonnableFields(widgetId, maxCloneRows, minCloneRows, afterSortRowsCustomAction, beforeAddRowCustomAction, afterAddRowCustomAction, beforeRemoveRowCustomAction, afterRemoveRowCustomAction, dinamicLabels, showLastDivider, $this->sortable);
+        initClonnableFields(widgetId, maxCloneRows, minCloneRows, afterSortRowsCustomAction, beforeAddRowCustomAction, afterAddRowCustomAction, beforeRemoveRowCustomAction, afterRemoveRowCustomAction, dinamicLabels, showLastDivider, sortable);
     }
 );
 ";
